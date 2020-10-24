@@ -1,10 +1,10 @@
-package pl.michalzadrozny.asmodule1.controller;
+package pl.michalzadrozny.asmodule2.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.michalzadrozny.asmodule1.model.AppUser;
-import pl.michalzadrozny.asmodule1.service.AppUserList;
+import pl.michalzadrozny.asmodule2.model.AppUser;
+import pl.michalzadrozny.asmodule2.service.AppUserList;
 
 import java.security.Principal;
 import java.util.Optional;

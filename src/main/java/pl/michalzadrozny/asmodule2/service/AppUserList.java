@@ -1,9 +1,9 @@
-package pl.michalzadrozny.asmodule1.service;
+package pl.michalzadrozny.asmodule2.service;
 
 import lombok.Getter;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Service;
-import pl.michalzadrozny.asmodule1.model.AppUser;
+import pl.michalzadrozny.asmodule2.model.AppUser;
 
 import java.util.ArrayList;
 import java.util.Collections;

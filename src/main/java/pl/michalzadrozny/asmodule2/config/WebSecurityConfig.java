@@ -1,4 +1,4 @@
-package pl.michalzadrozny.asmodule1.config;
+package pl.michalzadrozny.asmodule2.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -8,8 +8,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import pl.michalzadrozny.asmodule1.model.AppUser;
-import pl.michalzadrozny.asmodule1.service.AppUserList;
+import pl.michalzadrozny.asmodule2.model.AppUser;
+import pl.michalzadrozny.asmodule2.service.AppUserList;
 
 
 @Configuration

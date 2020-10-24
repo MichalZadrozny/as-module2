@@ -1,11 +1,11 @@
-package pl.michalzadrozny.asmodule1.service;
+package pl.michalzadrozny.asmodule2.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.security.authentication.event.AuthenticationSuccessEvent;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
-import pl.michalzadrozny.asmodule1.model.AppUser;
+import pl.michalzadrozny.asmodule2.model.AppUser;
 
 import java.util.Optional;
 

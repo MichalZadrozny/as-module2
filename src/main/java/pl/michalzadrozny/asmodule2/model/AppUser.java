@@ -1,4 +1,4 @@
-package pl.michalzadrozny.asmodule1.model;
+package pl.michalzadrozny.asmodule2.model;
 
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,4 +1,4 @@
-package pl.michalzadrozny.asmodule1;
+package pl.michalzadrozny.asmodule2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
