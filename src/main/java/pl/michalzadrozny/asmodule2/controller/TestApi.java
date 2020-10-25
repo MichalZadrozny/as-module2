@@ -24,26 +24,25 @@ public class TestApi {
         return "Cześć nieznajomy";
     }
 
+
     @GetMapping("/forAdmin")
     public String forAdmin(Principal principal) {
-        Optional<AppUser> appUser = userList.getUserByName(principal.getName());
 
-        if (appUser.isPresent()) {
-            return "Cześć admin " + principal.getName() + "! Liczba logowań w serwisie: " + appUser.get().getNumberOfSuccessAuth();
-        }
+        String hello = "Cześć admin " + principal.getName();
 
-        return "Cześć admin " + principal.getName();
+        return userList.getUserByName(principal.getName())
+                .map(user -> hello + "! Liczba logowań w serwisie: " + user.getNumberOfSuccessAuth())
+                .orElse(hello);
     }
 
     @GetMapping("/forUser")
     public String forUser(Principal principal) {
-        Optional<AppUser> appUser = userList.getUserByName(principal.getName());
 
-        if (appUser.isPresent()) {
-            return "Cześć user " + principal.getName() + "! Liczba logowań w serwisie: " + appUser.get().getNumberOfSuccessAuth();
-        }
+        String hello = "Cześć user " + principal.getName();
 
-        return "Cześć user " + principal.getName();
+        return userList.getUserByName(principal.getName())
+                .map(user -> hello + "! Liczba logowań w serwisie: " + user.getNumberOfSuccessAuth())
+                .orElse(hello);
     }
 
     @GetMapping("/logged-out")
